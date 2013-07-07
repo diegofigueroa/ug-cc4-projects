@@ -1,6 +1,6 @@
-name: Laboratorios
+name: Proyectos
 pygments: true
 timezone: America/Guatemala
 relative_permalinks: false
-baseurl: /ug-cc4-labs
+baseurl: /ug-cc4-proyects
 permalink: none
