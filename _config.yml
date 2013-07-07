@@ -2,5 +2,5 @@ name: Proyectos
 pygments: true
 timezone: America/Guatemala
 relative_permalinks: false
-baseurl: /ug-cc4-proyects
+baseurl: /ug-cc4-projects
 permalink: none
