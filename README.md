@@ -1,9 +1,8 @@
-ug-cc4-labs
+ug-cc4-projects
 ===========
 
 ````
 ~ $ gem install jekyll
-~ $ jekyll new my-awesome-site
-~ $ cd my-awesome-site
-~/my-awesome-site $ jekyll serve
+~ $ cd ug-cc4-projects
+~/ug-cc4-projects $ jekyll serve -w
 ````
