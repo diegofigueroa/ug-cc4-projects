@@ -4,3 +4,4 @@ timezone: America/Guatemala
 relative_permalinks: false
 baseurl: /ug-cc4-projects
 permalink: none
+markdown: kramdown
