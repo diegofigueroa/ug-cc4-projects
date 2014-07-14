@@ -1,50 +1,88 @@
-html, body{
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html, body {
   height: 100%;
   /* The html and body elements cannot have any padding or margin. */
 }
 
 /* Wrapper for page content to push down footer */
-#wrap{
+#wrap {
   min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  /* Negative indent footer by it's height */
-  margin: 0 auto -61px;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
 }
 
 /* Set the fixed height of the footer here */
-.push, .footer{
+#footer {
   height: 60px;
-}
-.footer{
-  border-top: 1px solid #eee;
   background-color: #f5f5f5;
 }
 
-/* Lastly, apply responsive CSS fixes as necessary */
-@media (max-width: 767px){
-  .footer {
-    margin-left: -20px;
-    margin-right: -20px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
 
 /* Custom page CSS
 -------------------------------------------------- */
+/* Not required for template or sticky footer method. */
 
-#wrap > .container, #wrap > .container-fluid{
-  padding-top: 60px;
+#wrap > .container {
+  padding: 60px 15px 0;
 }
-.container-fluid .credits{
+.container .text-muted {
   margin: 20px 0;
 }
 
+#footer > .container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+code {
+  font-size: 80%;
+}
 
 .brand-logo{
   margin-top:4px;
   margin-right:5px;
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
 }
 
 
@@ -128,7 +166,7 @@ html, body{
     max-width: 970px;
   }
   .bs-docs-sidenav {
-    width: 258px;
+    width: 15%;
   }
   .bs-docs-sidenav > li > a {
     width: 230px \9; /* Override the previous IE8-9 hack */
